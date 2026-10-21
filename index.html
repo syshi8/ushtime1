@@ -5,7 +5,23 @@
     <title> Java 1</title>
   </head>
   <body>
-    <h1>mire se vini </h1>
-    <p> faqja e pare github</p>
+    <label> numri i pare</label>
+    <input tpe="number" id="nr1">
+    <br>
+    <label> numri dyte</label>
+    <input type="number" id="nr2">
+    <br>
+    <button type="submit" onclick="sum()"> + </button>
+    <p id="result">  </p>
+
+    <script> 
+    function sum() 
+    {
+      var a= number(document.getelElementByid('nr1').value);
+      var b= number(document.getelElementByid('nr2').value);
+      var c=a+b;
+      document.getElementByid('result').innerHTML= c;
+    }
+    </script>
   </body>
 </html>
