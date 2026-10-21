@@ -1,27 +1,34 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset= "UTF = 8">
-    <title> Java 1</title>
-  </head>
-  <body>
-    <label> numri i pare</label>
-    <input tpe="number" id="nr1">
+<head>
+    <meta charset="UTF-8">
+    <title>Java 1</title>
+</head>
+
+<body>
+
+    <label>numri i pare</label>
+    <input type="number" id="nr1">
     <br>
-    <label> numri dyte</label>
+
+    <label>numri dyte</label>
     <input type="number" id="nr2">
     <br>
-    <button type="submit" onclick="sum()"> + </button>
-    <p id="result">  </p>
 
-    <script> 
-    function sum() 
-    {
-      var a= number(document.getElementById('nr1').value);
-      var b= number(document.getElementById('nr2').value);
-      var c=a+b;
-      document.getElementById('result').innerHTML= c;
-    }
+    <button type="submit" onclick="sum()"> + </button>
+
+    <p id="result"></p>
+
+    <script>
+        function sum() {
+            var a = Number(document.getElementById('nr1').value);
+            var b = Number(document.getElementById('nr2').value);
+
+            var c = a + b;
+
+            document.getElementById('result').innerHTML = c;
+        }
     </script>
-  </body>
+
+</body>
 </html>
