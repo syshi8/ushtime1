@@ -17,7 +17,8 @@
 
 <button type="submit" onclick="sum()"> + </button>
     <p id="result"></p>
-
+<button type="submit" onclick="times()"> * </button>
+    <p id="times"></p>
     <script>
         function sum() {
             var a = Number(document.getElementById('nr1').value);
@@ -26,6 +27,13 @@
             var c = a + b;
 
             document.getElementById('result').innerHTML = c;
+        }
+        function times() 
+        {
+              var a = Number(document.getElementById('nr1').value);
+            var b = Number(document.getElementById('nr2').value);
+               var c = a * b;
+             document.getElementById('times').innerHTML = c;
         }
     </script>
 
