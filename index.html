@@ -19,6 +19,8 @@
     <p id="result"></p>
 <button type="submit" onclick="times()"> * </button>
     <p id="times"></p>
+    <button type="submit" onclick="divide()"> * </button>
+    <p id="divide"></p>
     <script>
         function sum() {
             var a = Number(document.getElementById('nr1').value);
@@ -34,6 +36,13 @@
             var b = Number(document.getElementById('nr2').value);
                var c = a * b;
              document.getElementById('times').innerHTML = c;
+        }
+        function divide()
+             {
+              var a = Number(document.getElementById('nr1').value);
+            var b = Number(document.getElementById('nr2').value);
+               var c = a / b;
+             document.getElementById('divide').innerHTML = c;
         }
     </script>
 
