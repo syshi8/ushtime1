@@ -21,7 +21,22 @@
     <p id="times"></p>
     <button type="submit" onclick="divide()"> / </button>
     <p id="divide"></p>
+<br>
+    <hr>
+<h1> ritje/zbritje</h1>
+    <p id="numri"> 0 </p>
+    <button type="submit" onclick ="rritje()">rritje +1 </button>
+    <button type="submit" onclick ="zbritje()">zbritje -1 </button>
+
     <script>
+
+       var n=0;
+        function rritje()
+        {
+            n=n+1;
+            document.getElementNyId('numri').innerHTML=n;
+        }
+        
         function sum() {
             var a = Number(document.getElementById('nr1').value);
             var b = Number(document.getElementById('nr2').value);
@@ -47,6 +62,9 @@
                      var c = a / b;
              document.getElementById('divide').innerHTML = c;
         }
+
+      
+                 
     </script>
 
 </body>
